@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-01</title>
     <!-----------------------
              Styles 
       --------------------->
-      <link rel="stylesheet" href="/dist/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <!-- Logo -->
+    <script
+      src="https://kit.fontawesome.com/76114addde.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <main>
-        <header>
-            
-        </header>
+      <header
+        class="text-xl flex justify-items-center content-center justify-around mt-3"
+      >
+        <div class="logo">App</div>
+        <nav class="space-x-4">
+          <a href="">Home</a><a href="">About</a><a href="">Pricing</a
+          ><a href="">Team</a><a href="">Contact</a>
+        </nav>
+        <div class="space-x-4">
+          <a href="">Join</a
+          ><a class="bg-sky-100 p-2 rounded-xl" href="">Download</a>
+        </div>
+      </header>
+      <!-- Top section  -->
+      <section class="mt-20">
+        <div class="w-11/12 mx-auto flex flex-col sm:flex-row lg:flex-row">
+          <div class="p-4 w-full sm:w-1/2">
+            <p class="text-blue-500 mt-8">App Landing Page Example</p>
+            <h1 class="text-4xl font-bold mt-8">
+              Crafted with TailGrids UI Components
+            </h1>
+            <p class="mt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut.
+            </p>
+            <div class="mt-10">
+              <button class="bg-slate-200 p-3 shadow-xl rounded-xl">
+                <span><i class="fa-brands fa-apple"></i></span> App Store
+              </button>
+              <button>
+                <span><i class="fa-brands fa-google-play"></i></span> Play Store
+              </button>
+            </div>
+          </div>
+          <div
+            class="p-4 mx-auto mt-8 w-11/12 sm:w-1/2 lg:w-1/2 xl:w-1/2 bg-[length:150px] bg-no-repeat bg-[top_left_5rem]"
+            style="background-image: url(/img/Vector.svg)"
+          >
+            <img class="w-96 mx-auto" src="/img/iPhone.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
