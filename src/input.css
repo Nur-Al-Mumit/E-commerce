@@ -13,3 +13,6 @@
 .btn-teal {
   @apply bg-teal-500 hover:bg-teal-600 active:bg-teal-800;
 }
+.inputs {
+  @apply border-b-2 border-blue-300 text-xl p-3 transition duration-150 hover:border-emerald-300 focus:outline-0;
+}
