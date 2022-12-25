@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Utiliites */
+
+.btn {
+  @apply px-6 py-2 rounded-xl text-white font-bold;
+}
+.btn-blue {
+  @apply bg-blue-500  hover:bg-blue-600 active:bg-blue-800;
+}
+.btn-teal {
+  @apply bg-teal-500 hover:bg-teal-600 active:bg-teal-800;
+}
