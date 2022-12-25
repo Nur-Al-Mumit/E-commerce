@@ -20,24 +20,34 @@
     <main>
       <header
         id="navbar"
-        class="sticky top-0 text-xl flex justify-items-center content-center justify-around p-4 m-0 bg-slate-200"
+        class="sticky top-0 text-xl flex justify-items-center content-center justify-around p-2 m-0 bg-white/90 "
       >
-        <div class="logo">App</div>
-        <nav class="space-x-4">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
+        <div class="lg:hidden">
+          <a class="text-left text-4xl" href="">
+            <i class="fa-solid fa-bars"></i
+          ></a>
+        </div>
+        <div class="grow block sm:hidden sm:grow-0 lg:block">
+          <div class="flex justify-center items-center">
+            <img class="mr-1" src="/img/logos/app-blue.svg" alt="" />
+            <h1 class="text-4xl font-semibold">App</h1>
+          </div>
+        </div>
+        <nav class="space-x-4 font-semibold font text-2xl hidden sm:block">
+          <a class="nav-btn" href="#home">Home</a>
+          <a class="nav-btn" href="#about">About</a>
+          <a class="nav-btn" href="#pricing">Pricing</a>
+          <a class="nav-btn" href="#team">Team</a>
+          <a class="nav-btn" href="#contact">Contact</a>
         </nav>
-        <div class="space-x-4">
+        <div class="space-x-4 font-semibold text-2xl hidden md:block">
           <a href="">Join</a
-          ><a class="bg-sky-100 p-2 rounded-xl" href="">Download</a>
+          ><a class="bg-sky-100 px-5 py-1 rounded-xl" href="">Download</a>
         </div>
       </header>
       <!-- Top section  -->
       <section id="home" class="mt-20 scroll-mt-16">
-        <div class="w-11/12 mx-auto flex flex-col sm:flex-row lg:flex-row">
+        <div class="w-11/12 mx-auto flex flex-col sm:flex-row">
           <div class="p-4 w-full sm:w-1/2">
             <p class="text-blue-500 mt-8">App Landing Page Example</p>
             <h1 class="text-4xl font-bold mt-8">
@@ -63,7 +73,7 @@
             </div>
           </div>
           <div
-            class="p-4 mx-auto mt-8 w-11/12 sm:w-1/2 lg:w-1/2 xl:w-1/2 bg-[length:150px] bg-no-repeat bg-[top_left_5rem]"
+            class="p-4 mx-auto mt-8 w-11/12 sm:w-1/2 bg-[length:150px] bg-no-repeat bg-[top_left_5rem]"
             style="background-image: url(/img/vectors/Vector.svg)"
           >
             <img class="w-96 mx-auto" src="/img/iPhones/iPhone.png" alt="" />

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /* Custom Utiliites */
-
+.nav-btn {
+  @apply transition duration-200 hover:text-blue-600 active:text-blue-800;
+}
 .btn {
   @apply px-6 py-2 rounded-xl text-white font-bold;
 }
