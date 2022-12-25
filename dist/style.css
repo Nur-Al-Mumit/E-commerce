@@ -579,6 +579,10 @@ video {
   margin-top: 1.75rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -597,10 +601,6 @@ video {
 
 .mr-1 {
   margin-right: 0.25rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .flex {
@@ -637,14 +637,6 @@ video {
 
 .w-56 {
   width: 14rem;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .w-44 {
@@ -787,12 +779,6 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -809,26 +795,13 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .border-2 {
   border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-slate-100 {
   --tw-border-opacity: 1;
   border-color: rgb(241 245 249 / var(--tw-border-opacity));
-}
-
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
 .bg-slate-200 {
@@ -859,14 +832,6 @@ video {
   background-size: 200px;
 }
 
-.bg-\[length\:100px\] {
-  background-size: 100px;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-\[top_left_5rem\] {
   background-position: top left 5rem;
 }
@@ -877,10 +842,6 @@ video {
 
 .bg-\[top_5px_left_0px\] {
   background-position: top 5px left 0px;
-}
-
-.bg-left {
-  background-position: left;
 }
 
 .bg-no-repeat {
@@ -1069,10 +1030,6 @@ video {
     width: 50%;
   }
 
-  .sm\:w-80 {
-    width: 20rem;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1093,26 +1050,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:bg-\[length\:150px\] {
-    background-size: 150px;
-  }
-
-  .sm\:bg-\[length\:50px\] {
-    background-size: 50px;
-  }
-
-  .sm\:bg-\[length\:100px\] {
-    background-size: 100px;
-  }
-
-  .sm\:bg-\[length\:120px\] {
-    background-size: 120px;
-  }
-
-  .sm\:bg-\[length\:200px\] {
-    background-size: 200px;
   }
 
   .sm\:text-left {
@@ -1146,14 +1083,6 @@ video {
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
-
-  .md\:bg-\[length\:150px\] {
-    background-size: 150px;
-  }
-
-  .md\:bg-\[length\:200px\] {
-    background-size: 200px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1185,10 +1114,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:bg-\[length\:200px\] {
-    background-size: 200px;
   }
 }
 
