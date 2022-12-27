@@ -963,7 +963,43 @@ video {
 
 /* Custom Utiliites */
 
+.active-nav {
+  position: absolute;
+  left: 0px;
+  top: 3.5rem;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+@keyframes navAni {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-0%);
+    opacity: 1;
+  }
+}
+
+.active-nav {
+  animation: navAni 1s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .nav-btn {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -972,13 +1008,39 @@ video {
 }
 
 .nav-btn:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  border-radius: 1rem;
+  background-color: rgb(255 255 255 / 0.3);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
-.nav-btn:active {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+@media (min-width: 640px) {
+  .nav-btn {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  .nav-btn:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity));
+  }
+
+  .nav-btn:active {
+    --tw-text-opacity: 1;
+    color: rgb(30 64 175 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-btn {
+    margin-left: 1rem;
+  }
 }
 
 .btn {
@@ -1047,16 +1109,16 @@ video {
 
 @keyframes getscl {
   0% {
-    transform: scale(1);
+    transform: scaleY(1);
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scaleY(1.1);
   }
 }
 
 .hover\:animate-getscl:hover {
-  animation: getscl 1s ease-in-out 200ms;
+  animation: getscl 500ms ease-in-out 200ms;
 }
 
 @media (min-width: 640px) {

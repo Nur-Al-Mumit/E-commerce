@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 /* Custom Utiliites */
+.active-nav{
+  @apply flex flex-col h-screen w-full justify-around items-center bg-blue-400 absolute left-0 top-14 animate-navAni;
+}
 .nav-btn {
-  @apply transition duration-200 hover:text-blue-600 active:text-blue-800;
+  @apply transition duration-200 text-white hover:rounded-2xl hover:px-5 hover:py-1 py-1 px-5 sm:hover:px-2 sm:px-2 hover:bg-white/30 sm:text-black sm:hover:text-blue-600 sm:active:text-blue-800 xl:ml-4;
 }
 .btn {
   @apply px-6 py-2 rounded-xl text-white font-bold;

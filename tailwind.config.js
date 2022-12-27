@@ -10,16 +10,27 @@ module.exports = {
         },
         getscl: {
           "0%": {
-            transform: "scale(1)",
+            transform: "scaleY(1)",
           },
           "100%": {
-            transform: "scale(1.1)",
+            transform: "scaleY(1.1)",
+          },
+        },
+        navAni: {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(-0%)",
+            opacity: "1",
           },
         },
       },
       animation: {
         wiggle: "wiggle 2s ease-in-out",
-        getscl: "getscl 1s ease-in-out 200ms",
+        getscl: "getscl 500ms ease-in-out 200ms",
+        navAni: "navAni 1s ease-in-out",
       },
     },
   },
